@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap /bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Quiz</title>
+</head>
+
+<body style="background-color:#020b3d">
+    <div class="container">
+        <div class="row" style="margin-bottom: 30px; border: solid 2px white">
+            <div class="col col-lg-12 col-md-12 col-12" style="margin-top: 20px;">
+                <h1 style="font-size:40px; color: white; text-align: center;">Quiz sobre Banco de dados</h1>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">O que é um banco de dados?</p>
+            <div class="form-group">
+                <label for="Select1">Resposta</label>
+                <select class="form-control" id="Select1">
+                    <option value="2">---</option>
+                    <option value="2">Um banco de parque temático</option>
+                    <option value="2">Um banco onde contem dados de jogatina</option>
+                    <option value="1">Um banco que organiza e armazena informações em linhas e colunas</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select1')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">O que é um registro?</p>
+            <div class="form-group">
+                <label for="Select2">Resposta</label>
+                <select class="form-control" id="Select2">
+                    <option value="2">---</option>
+                    <option value="2">Um cadastro</option>
+                    <option value="1">Uma informação do BD</option>
+                    <option value="2">Um verificador de consumo de agua</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select2')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">O que é um banco de dados relacional?</p>
+            <div class="form-group">
+                <label for="Select3">Resposta</label>
+                <select class="form-control" id="Select3">
+                    <option value="2">---</option>
+                    <option value="2">O estado civil de um banco de dados</option>
+                    <option value="2">Um banco de praça</option>
+                    <option value="1">Base de dados organizado em tabelas bidimencionais</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select3')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">Escolha a opção que contenha somente dados do tipo Numérico</p>
+            <div class="form-group">
+                <label for="Select4">Resposta</label>
+                <select class="form-control" id="Select4">
+                    <option value="2">---</option>
+                    <option value="1">Decimal - Float - Int</option>
+                    <option value="2">Char - Int - Double</option>
+                    <option value="2">Varchar - Binary - Text</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select4')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">Escolha a opção que contenha somente dados do tipo String</p>
+            <div class="form-group">
+                <label for="Select5">Resposta</label>
+                <select class="form-control" id="Select5">
+                    <option value="2">---</option>
+                    <option value="2">Decimal - Float - Int</option>
+                    <option value="2">Char - Int - Double</option>
+                    <option value="1">Varchar - Char - Text</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select5')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">Para que serve uma chave primária?</p>
+            <div class="form-group">
+                <label for="Select6">Resposta</label>
+                <select class="form-control" id="Select6">
+                    <option value="2">---</option>
+                    <option value="2">Acessar o banco de dados</option>
+                    <option value="2">Abrir portas</option>
+                    <option value="1">Identificar a tabela</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select6')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">Como é incrementado uma chave primária?</p>
+            <div class="form-group">
+                <label for="Select7">Resposta</label>
+                <select class="form-control" id="Select7">
+                    <option value="2">---</option>
+                    <option value="2">De forma manual pelo usuário</option>
+                    <option value="1">O banco incrementa automaticamente</option>
+                    <option value="2">Ela aparece quando quer</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select7')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">O que é um gerenciador de Banco de Dados?</p>
+            <div class="form-group">
+                <label for="Select8">Resposta</label>
+                <select class="form-control" id="Select8">
+                    <option value="2">---</option>
+                    <option value="1">Sistema que permite alterar dados do Banco</option>
+                    <option value="2">Pessoa que gerencia o banco de dados</option>
+                    <option value="2">É a pessoa que gerencia os bancos que são criados </option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select8')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">Para que serve a linguagem SQL?</p>
+            <div class="form-group">
+                <label for="Select9">Resposta</label>
+                <select class="form-control" id="Select9">
+                    <option value="2">---</option>
+                    <option value="2">Para comunicação</option>
+                    <option value="1">Para manipular dados no banco</option>
+                    <option value="2">Para criar o banco de dados</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" onclick="contaRespCorreta('Select9')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <p style="font-size:30px; color: black; text-align: center;">Quais os 4 comandos básicos da linguagem SQL?</p>
+            <div class="form-group">
+                <label for="Select10">Resposta</label>
+                <select class="form-control" id="Select10">
+                    <option value="2">---</option>
+                    <option value="2">Between - In - Select - Commit</option>
+                    <option value="1">Select - Insert - Delete - Update</option>
+                    <option value="2">Insert - Rollback - Grant - Revoke</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" onclick="contaRespCorreta('Select10')">Responder</button>
+        </div>
+        <div class="jumbotron">
+            <h1 id="contador"></h1>
+            <h3 id="classificacao"></h3>
+        </div>
+        <div class="col col-lg-12 col-md-12 col-12" style="margin-top: 20px; text-align: center;">
+            <a class="btn btn-primary" href="index.html" role="button" style="margin-bottom: 15px;">Voltar a Home</a>
+        </div>
+    </div> 
+<hr style="background-color: white;">
+<footer class="footer navbar-bottom" style="text-align: center; margin-bottom: 30px;">
+    <p style="color: white;">Desenvolvido em: 2020 / Por - Gustavo Barbosa Paris</p>
+  </footer>
+    </div>
+    <script> 
+        let count = 0;
+        function contaRespCorreta(id) {
+            let select = document.getElementById(id);
+            let valor = select.options[select.selectedIndex].value;
+            if(valor == 1){
+                count = count + 1;
+                console.log(count);
+                document.getElementById('contador').innerHTML = 'o seu resultado foi: ' + count;
+            }
+            if(count<=3){
+                document.getElementById('classificacao').innerHTML = 'Navegue neste site e adquira conhecimentos sobre esse assunto e depois tente novamente para verificar o que aprendeu';
+            }else if(count<=6){
+                document.getElementById('classificacao').innerHTML = 'Muito bem, você demonstrou conhecer um pouco sobre esse assunto';
+            }else{
+                document.getElementById('classificacao').innerHTML = 'Parabéns você realmente conhece muito sobre este assunto';
+            }
+        }
+
+    </script>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="./bootstrap /jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap /popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap /bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

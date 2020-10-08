@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap /bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Banco de dados</title>
+</head>
+
+<body style="background-color:#020b3d">
+    <div class="container">
+        <div class="row" style="background-color: #13ccc3; border: solid 2px white">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #13ccc3">
+                <img src="./imagens/bd-imagem-nav-removebg-preview.png" style="height: 100px; width: 120px;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: 20px">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#D1">Conceitos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#D2">Tipos de dados</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#D3">Gerenciados de BD</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./quiz.html">Quiz</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </div>  
+        <div class="row">
+            <div class="card bg-dark text-white" style="width: 100%; height: 500px;">
+                <img class="card-img" src="./imagens/img-principal-bd.webp" alt="Imagem do card" style="width: 100%; height: 500px;">
+                <div class="card-img-overlay" style="text-align: center;">
+                  <h5 class="card-title"style="font-size:40px;">Banco de dados</h5>
+                  <p class="card-text" style="font-size:25px;">Vamos conhecer um pouco mais sobre Banco de dados e suas funcionalidades!</p>
+                </div>
+              </div>
+        </div>
+        <hr style="background-color: white;"><a name="D1"></a></hr>
+            <div class="row" style="margin-bottom: 30px; border: solid 2px white">
+                <div class="col col-lg-12 col-md-12 col-12" style="margin-top: 20px;">
+                    <h1 style="font-size:40px; color: white; text-align: center;">Conceito de banco de dados</h1>
+                </div>
+                <div class="col col-lg-6 col-md-12 col-12" style="margin-top: 15px;">
+                    <img src="./imagens/bd-relacional.png" style="height: 450px; width: 100%;">
+                </div>
+                <div class="col col-lg-6 col-md-12 col-12" style="margin-top: 15px; text-align: center;">
+                    <h1 style="font-size:25px; color: white; text-align: center;">Conceito</h1>
+                    <p style="color: white; font-size: 15px;">SGBD (Sistema de Gerenciamento de Banco de Dados) é uma estrutura de software que permite que dados sejam armazenados,
+                        organizados, protegidos, atualizados, acrescentados, excluídos e acessados sempre que necessário,
+                        devendo corresponder à demanda que a aplicação que o utiliza exige. 
+                    </p>
+                    <h1 style="font-size:25px; color: white; text-align: center;">BD relacionais</h1>
+                    <p style="color: white; font-size: 15px;">Esse tipo é muito utilizado em sistemas de ERP (gestão de empresas), CRM (relacionamento com o cliente), controle financeiro e tantas outras aplicações porque os dados são estruturados em tabelas cujas colunas e linhas se relacionam. Uma loja, por exemplo, pode ter uma tabela de clientes, outra para controle de estoque, uma terceira para fluxo de caixa e assim por diante. 
+                </p>
+                <p style="color: white;">Para mais informações, clique no botão abaixo!</p>
+                    <a class="btn btn-primary" href="./detalhes1.html" role="button" style="margin-bottom: 15px;">Saiba mais!</a>
+                </div>
+            </div> 
+            <hr style="background-color: white;"><a name="D2"></a><hr>
+            <div class="row" style="margin-bottom: 30px; border: solid 2px white">
+                <div class="col col-lg-12 col-md-12 col-12" style="margin-top: 20px;">
+                    <h1 style="font-size:40px; color: white; text-align: center;">Tipos de dados e chave-primária</h1>
+                </div>
+                <div class="col col-lg-6 col-md-12 col-12" style="margin-top: 15px;">
+                    <img src="./imagens/conceito-bd.jpg" style="height: 450px; width: 100%;">
+                </div>
+                <div class="col col-lg-6 col-md-12 col-12" style="margin-top: 15px; text-align: center;">
+                    <h1 style="font-size:25px; color: white; text-align: center;">Tipos de dados</h1>
+                    <p style="color: white; font-size: 15px;">DECIMAL(M,D) – Ponto decimal com M dígitos no total (precisão) e D casas decimais (escala); o padrão é 10,0; M vai até 65 e D até 30.;<br>
+                        FLOAT(M,D) – Ponto flutuante com precisão M e escala D; o padrão é 10,2; D vai até 24.<br> 
+                        CHAR(M) – String que ocupa tamanho fixo entre 0 e 255 caracteres
+                        BOOL / BOOLEAN – Valores binários 0 / 1; Na verdade, é um alias para o tipo TINYINT(1).<br> 
+                        VARCHAR(M) – String de tamanho variável, até 65535 caracteres.<br> 
+                        BLOB / MEDIUMBLOB/ TINYBLOB – Campo com tamanho máximo de 65535 caracteres binários; ‘Binary Large Objects’, são usados para armazenar grandes quantidades de dados, como imagens.<br> 
+                    </p>
+                    <h1 style="font-size:25px; color: white; text-align: center;">Chave-primária</h1>
+                    <p style="color: white; font-size: 15px;">Chaves primárias (em inglês, Primary keys ou "PK"), sob o ponto de vista de um banco de dados relacional,
+                        referem-se aos conjuntos de um ou mais campos, cujos valores,
+                        considerando a combinação de valores em caso de mais de uma chave primária,
+                        nunca se repetem na mesma tabela e, desta forma,
+                        podem ser usadas como um índice de referência para criar relacionamentos com as demais tabela do banco de dados (daí vem o nome banco de dados relacional). Portanto, uma chave primária nunca pode ter valor nulo, nem repetição.
+                </p>
+                <p style="color: white;">Para mais informações, clique no botão abaixo!</p>
+                    <a class="btn btn-primary" href="./detalhes2.html" role="button" style="margin-bottom: 15px;">Saiba mais!</a>
+                </div>
+            </div> 
+            <hr style="background-color: white;"><a name="D3"></a><hr>
+            <div class="row" style="margin-bottom: 30px; border: solid 2px white">
+                <div class="col col-lg-12 col-md-12 col-12" style="margin-top: 20px;">
+                    <h1 style="font-size:40px; color: white; text-align: center;">Gerenciador de BD e Linguagem SQL</h1>
+                </div>
+                <div class="col col-lg-6 col-md-12 col-12" style="margin-top: 15px;">
+                    <img src="./imagens/geren-bd.png" style="height: 450px; width: 100%;">
+                </div>
+                <div class="col col-lg-6 col-md-12 col-12" style="margin-top: 15px; text-align: center;">
+                    <h1 style="font-size:25px; color: white; text-align: center;">Gerenciador de BD</h1>
+                    <p style="color: white; font-size: 15px;">
+                        Gerenciadores de bancos de dados MySQL, são plataformas nas quais voce pode conectar remotamente seu banco de dados, sendo possivel
+                        assim alterar, inserir, deletar, e listar os dados que nele estão guardados. 
+                    </p>
+                    <h1 style="font-size:25px; color: white; text-align: center;">Linguagem SQL</h1>
+                    <p style="color: white; font-size: 15px;">
+                        A linguagem SQL, é a linguagem utilizada para poder fazer as alteraçoes basicas no Banco de dados,
+                        e dentro dessa linguagem temos os comando basicos mais importantes e mais utilizados:<br> 
+                        Select - Comando utilizado juntamente com seus parametros para retornar uma informaçao especifica;<br> 
+                        Insert - Comando utilizado para inserir algum novo dado em uma tabela do Banco;<br> 
+                        Update - Comando utilizado para atualizar algum dado especifico desejado;<br> 
+                        Delete - Comando utilizado para deletar um ou mais dados do Banco de dados;<br> 
+                </p>
+                <p style="color: white;">Para mais informações, clique no botão abaixo!</p>
+                    <a class="btn btn-primary" href="./detalhes3.html" role="button"style="margin-bottom: 15px;">Saiba mais!</a>
+                </div>
+            </div>
+        <hr style="background-color: white;">
+        <footer class="footer navbar-bottom" style="text-align: center; margin-bottom: 30px;">
+            <p style="color: white;">Desenvolvido em: 2020 / Por - Gustavo Barbosa Paris</p>
+          </footer>
+    </div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="./bootstrap /jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap /popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap /bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
